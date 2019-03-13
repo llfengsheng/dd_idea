@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapper namespace="com.dangdang.monday.mapper.UserMapper" >
+  
+ <insert id = "insertUser" parameterType = "string">
+ 	 insert into user values (#{userName},#{password})
+ </insert>
+ <select id = "selectUser"  resultType = "User">
+ 	select * from user 
+ </select>
+ </mapper>
